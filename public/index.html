@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"> 
+    <title>Slurpen - Timelapse</title>
+  </head>
+  <body>
+      
+    <img src="nyLogo.jpg" alt="Ny Oslo logo" width="60" height="60">
+    <h1>Slurpen Timelapse monitor</h1>
+    <h2>Servo Kontroll</h2>
+  
+    <table>
+      <tr>
+        <td>
+          <form action="/venstre" method="get">
+            <button type="submit">Kamera <-</button>
+          </form> 
+        </td>
+        <td>
+            <form action="/midten" method="get">
+              <button type="submit">Midtstill</button>
+            </form>
+        </td>        
+        <td>
+            <form action="/hoyre" method="get">
+              <button type="submit">Kamera -></button>
+            </form>
+        </td>
+      </tr>
+    </table>
+
+    <p id="counter">Klikk her for å ta et bilde</p>
+    <form action="/bildet" method="get">
+      <button type="submit">Ta et BILDE</button>
+    </form>
+    <form action="/video" method="get">
+      <button type="submit">Ta et BILDE</button>
+    </form>
+        
+    <div>
+           <a href="http://pibpluss:8080/bilder.html">Her er bildene</a>
+           <a href="http://pibpluss:8080/clicks">Her er klikkene</a>
+    </div>
+
+
+  </body>
+  <script src="client.js"></script>
+</html>
